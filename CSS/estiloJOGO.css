@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+html,body{
+	width:100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;	
+}
+body > img{
+	width:100%;
+	height: 100%;
+	display:none;
+}
+#painel{
+	width:312px;
+	padding: 10px 0px;
+	border: 2px solid blue;
+	position: absolute;
+	left: 10px;
+	top: 10px;	
+	display: none;
+}
+#painel .vida{
+	width:306px;
+	height:30px;
+	border:3px solid white;
+	background-color: purple;
+}
+.vida .vidaSingle{
+	width:300px;
+	height:100%;
+	background-color:red;
+}
+#painel h3{
+	font-size: 12px;
+	font-weight: bold;
+}
+#painel p{
+	margin-top: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#painel span{
+	margin-top: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#descricaoJOGO{
+	width:600px;
+	height:500px;
+	margin:10px auto;
+	background-image: url("../Imagens/intro.jpg");
+	background-position:center;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%);	
+}
+#btnJOGAR{
+	font-size: 20px;
+	cursor: pointer;
+}
+#naveJOGADOR{
+	width:40px;
+	height: 40px;
+	background-image:url("../Imagens/nave_jog.gif");
+	background-size: 100% 100%;
+	background-position: center;
+	display: none;
+	position: absolute;
+	top:600px;
+	left: 30px;	
+}
+#tiro{
+	width:15px;
+	height:15px;
+	border-radius: 8px;
+	background-color: red;
+	position:absolute;	
+	margin-bottom: 5px;
+	left:12px;
+	top:0px;
+	animation-name:tirosaiu;
+	animation-duration:3s;
+	animation-timing-function:linear;
+	animation-delay:0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: none;
+}
+.bombas{
+	width:30px;
+	height:40px;
+	background-image: url("../Imagens/bomba.gif");
+	background-size: 100% 100%;
+	background-position: center;
+	position: absolute;	
+	top: 0;
+}
+.explosaoChao{
+	width:55px;
+	height:57px;
+	position:absolute;
+}
+.explosaoAr{
+	width:70px;
+	height:70px;
+	position:absolute;
+}
+#derrota{
+	width:600px;
+	height:500px;
+	margin:10px auto;
+	background-image: url("../Imagens/derrota.jpg");
+	background-position:center;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index:1;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%);
+	display:none;
+}
+#vitoria{
+	width:600px;
+	height:500px;
+	margin:10px auto;
+	background-image: url("../Imagens/vitoria.jpg");
+	background-position:center;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index:1;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%);
+	display:none;
+}
